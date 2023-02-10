@@ -1,0 +1,15 @@
+@import url(../bootstrap/scss/_variables.scss);
+@import url(../bootstrap/scss/_functions.scss);
+@import url(../bootstrap/scss/_mixins.scss);
+@import url(../bootstrap/scss/bootstrap-utilities.scss);
+$violet:#6a5be2;
+$ramblue:#D2DFFF;
+$secondary:#6c757d;
+
+$theme-colors: (
+  "primary": $violet,
+  "ramblue":$ramblue,
+  "secondary":$secondary
+);
+
+@import "../bootstrap/scss/bootstrap.scss";

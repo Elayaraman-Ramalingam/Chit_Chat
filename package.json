@@ -1,0 +1,15 @@
+{
+  "name": "custom-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./assets/scss/custom.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "sass -w ./assets/scss/custom.scss ./assets/css/custom.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+    
+  },
+  "author": "",
+  "license": "ISC"
+}
