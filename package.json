@@ -8,7 +8,6 @@
     "css-build": "sass -w ./assets/scss/custom.scss ./assets/css/custom.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
-    
   },
   "author": "",
   "license": "ISC"

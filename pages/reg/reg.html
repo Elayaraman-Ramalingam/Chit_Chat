@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../assets/css/custom.css">
     <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
 
-    <script src="../../assets/js/reg.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.bundle.js"></script>
+
 </head>
 <body class="bg-ramblue vh-100 vw-100">
     <div class=" h-100 mx-auto d-flex justify-content-center">
@@ -27,20 +28,22 @@
             </div>
             <div class="mb-3">
               <label for="new_password" class="form-label">Enter the Password</label>
-              <input type="password" class="form-control" id="new_password">
+              <input type="password" class="form-control" id="new_password" autocomplete="off">
             </div>
             <div class="mb-3">
               <label for="user_password" class="form-label">Confirm the Password</label>
-              <input type="password" class="form-control" id="user_password">
+              <input type="password" class="form-control" id="user_password" autocomplete="off">
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Agree to our privacy policies</label>
             </div>
             <div class="mb-3 form-check-label">
-              <button class="btn btn-link ">click here to login now</button>
+              <a href="./login.html">
+                click here to login now
+              </a>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Register</button>
           </form>
     </div>
 </body>
