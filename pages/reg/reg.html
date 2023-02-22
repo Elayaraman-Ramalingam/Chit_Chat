@@ -10,41 +10,52 @@
     <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
 
     <script src="../../assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="/assets/js/form/form.js"></script>
 
 </head>
 <body class="bg-ramblue vh-100 vw-100">
     <div class=" h-100 mx-auto d-flex justify-content-center">
-        <form class="d-flex flex-column justify-content-center " id="form">
+        <form class="d-flex flex-column justify-content-center " id="regform">
             <div class="form mb-3">
               <h1 class="text-center text-primary fs-1 fw-bolder">Registration</h1>
             </div>
-            <div class="mb-3">
-              <label for="user_name" class="form-label">Enter the name</label>
-              <input type="text" class="form-control" id="user_name" aria-describedby="user_name">
+            <div class="form-floating mb-3 ">
+              <input type="text" class="form-control" id="user_name" placeholder="Enter email" name="user_name">
+              <label for="user_name">Enter your name</label>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Phone number</label>
-              <input type="tel" class="form-control" id="user_tel" aria-describedby="phone_number">
+            <div class="form-floating mb-3 ">
+              <input type="tel" class="form-control" id="user_tel" placeholder="Enter email" name="user_tel">
+              <label for="user_tel">Enter your Mobile Number</label>
             </div>
-            <div class="mb-3">
-              <label for="new_password" class="form-label">Enter the Password</label>
-              <input type="password" class="form-control" id="new_password" autocomplete="off">
+            <div class="form-floating mb-3 ">
+              <input type="password" class="form-control" id="password" placeholder="Enter email" name="password">
+              <label for="password">Enter the password</label>
             </div>
-            <div class="mb-3">
-              <label for="user_password" class="form-label">Confirm the Password</label>
-              <input type="password" class="form-control" id="user_password" autocomplete="off">
+            <div class="form-floating mb-3 ">
+              <input type="password" class="form-control" id="user_password" placeholder="Enter email" name="user_password">
+              <label for="user_password">Confirm the password</label>
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Agree to our privacy policies</label>
+              <label class="form-check-label " for="exampleCheck1">Agree to our privacy policies</label>
             </div>
             <div class="mb-3 form-check-label">
-              <a href="./login.html">
+              <a href="./login.html" class="text-primary">
                 click here to login now
               </a>
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
           </form>
     </div>
+
+    <script>
+          const regForm = document.querySelector("#regform");
+          regForm.addEventListener("submit", function(event){
+          event.preventDefault();
+
+          window.location.href="./login.html";
+
+          });
+    </script>
 </body>
 </html>

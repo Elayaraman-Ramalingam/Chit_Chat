@@ -14,7 +14,7 @@
 </head>
 <body class="bg-ramblue">
     <div class=" h-100 mx-auto d-flex justify-content-center">
-        <div class="d-flex flex-column justify-content-center " id="form" >
+        <form class="d-flex flex-column justify-content-center " id="loginform" >
             <div class="form mb-3">
               <h1 class="text-center text-primary fs-1 fw-bolder">Login</h1>
             </div>
@@ -35,10 +35,17 @@
                 click here to Register
               </a>
             </div>
-            <button type="submit" class="btn btn-primary" onclick="window.location.href='../main/home.html'">Login</button>
-          </div>  
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>  
     </div>
-    <div>
-    </div>
+    <script>
+          const loginform = document.querySelector("#loginform");
+          loginform.addEventListener("submit", function(event){
+          event.preventDefault();
+
+          window.location.href="../main/home.html";
+
+          });
+    </script>
 </body>
 </html>

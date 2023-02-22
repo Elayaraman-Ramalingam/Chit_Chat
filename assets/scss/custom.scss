@@ -7,9 +7,22 @@ body,html{
   height: 100%;
 }
 
+.card{
+  outline: none;
+  border: none;
+}
+
 $violet:#6a5be2;
 $ramblue:#D2DFFF;
 $secondary:#6c757d;
+
+:root{
+  --bs-blue: $violet;
+}
+
+$form-check-input-checked-bg-color : $violet;
+$form-check-input-focus-border: $violet;
+$form-check-input-checked-border-color: $violet;
 
 $font-family-sans-serif: 'Poppins', sans-serif !default;
 $font-family-serif:      "Helvatica", serif !default;
@@ -19,7 +32,6 @@ $font-family-base:       $font-family-sans-serif !default;
 $theme-colors: (
   "primary": $violet,
   "ramblue":$ramblue,
-  "secondary":$secondary
 );
 
 @import "../bootstrap/scss/bootstrap.scss";
